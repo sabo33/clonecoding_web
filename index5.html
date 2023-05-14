@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1인촬영 리터치 | 모노맨션</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,12 +20,28 @@
     </div>
     <div id="d1">
         <div id="image1">
-            <img src="./thumb-27J24_600x900.png" alt="1인촬영 리터치">
+            <img src="./thumb-27J24_600x900.png" alt="2인촬영 리터치">
+            
         </div>
-        <p>현재 선택하신 상품은 <b>2인촬영 리터치</b>입니다.</p>
+       
+        <div id="orders">
+            <p>  현재 선택하신 상품은 <b>2인촬영 리터치</b>입니다.<br></p>
+            <p id="option">옵션 선택</p>
 
+            <select id="selection">
+                <option value="0">[필수] 선택하세요</option>
+                <option value="1">기본보정 : 5,000원</option>
+                <option value="2">고급보정 : 10,000원</option>
+            </select>
+
+            <div id="files">
+                <input type="file" class="file">
+            </div>
+            <button id="buy" type="button" class="btn btn-primary">구매진행</button>
+        </div>
+       
     </div>
-    <div class="images"> 
+    <div class="images">
         <img src="./서비스제공기간.jpg" style="max-width: 100%;">
         <img src="./환불규정.jpg" style="max-width: 100%;">
     </div>
